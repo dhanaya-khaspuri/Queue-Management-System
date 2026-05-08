@@ -1,0 +1,29 @@
+/* index.css */
+
+/* Reset everything to fill the screen */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden; /* Prevent side scrolling */
+}
+
+body {
+  /* Set your dark background globally so there is no white strip */
+  background-color: #0f172a; 
+  color: white;
+  font-family: 'Inter', sans-serif;
+  display: block; /* Change from flex if you want a standard dashboard flow */
+}
+
+/* Remove any narrow constraints on your main container */
+.container, .app-wrapper, .page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  max-width: none; /* This removes the "middle only" restriction */
+  padding: 20px;
+  background: transparent; /* Makes the white strip disappear */
+  display: flex;
+  flex-direction: column;
+}
